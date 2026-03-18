@@ -99,6 +99,21 @@ class VolumeOverlay:
         self.root.update()
 
 overlay = VolumeOverlay()
+
+def main(inc, dec, mute=False):
+    pythoncom.CoInitialize()  # ESSENTIAL
+
+    audio = AudioController("firefox.exe") #choose the process
+    if mute:
+        audio.toggle_mute()
+        return
+    if inc > 0:
+        audio.decrease_volume(inc)
+    if dec > 0:
+        audio.increase_volume(dec)
+    elif inc == 69:
+        audio.set_volume(1.0)
+
 # Hotkeys
 keyboard.add_hotkey('ctrl+down', lambda: main(0.1, 0))   # lower
 keyboard.add_hotkey('ctrl+up', lambda: main(0, 0.1))     # raise
