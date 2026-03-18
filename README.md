@@ -8,3 +8,5 @@ This is a simple program that allows you quickly adjust the volume of any specif
 I made this because sometimes it interrupts a lot of my workflow to alt-tab and decrease the volume of spotify, youtube, etc. and i couldn't find any quick solutions for this problem
 
 There are many things that i still want to add like the possibility to control multiple apps, better UI and overlays, being able to open it as an executable and making it able to start with windows, but for now this is version 0.1 and 0.2
+
+yes im missing a lot of thins especially proper documentation, just give me some time, its my first project....
