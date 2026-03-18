@@ -84,7 +84,7 @@ keyboard.add_hotkey('ctrl+down', lambda: main(0.1, 0))   # lower
 keyboard.add_hotkey('ctrl+up', lambda: main(0, 0.1))     # raise
 keyboard.add_hotkey('ctrl+left', lambda: main(0, 0, True))  # mute toggle
 keyboard.add_hotkey('ctrl+esc', lambda: main(69,420)) # exit and reset volume to be the same as the master/main
-print("Press 'ctrl+down' para diminuir e 'ctrl+up' to raise the volume of the program")
+print("Press 'ctrl+down' to decrease and 'ctrl+up' to raise the volume of the program")
 print("Press Ctrl + ESC to exit")
 
 keyboard.wait('ctrl+esc')
